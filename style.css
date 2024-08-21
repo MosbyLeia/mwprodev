@@ -1,0 +1,21 @@
+* , a, h5 {
+    color: #aa4ea2 !important;
+}
+
+/* a, h5 {
+    color: #aa4ea2;
+} */
+
+
+#enviarMensaje{
+  
+        background: -webkit-linear-gradient(to right, rgba(166,192,254,0.5), rgba(246,128,132,0.5));
+        /* Otra propiedad background para navegadores que no usan el prefijo -webkit- */
+        background: linear-gradient(to right, rgba(166,192,254,0.5), rgba(246,128,132,0.5));
+      border: none;
+      color: rgb(54, 54, 54);
+}
+
+nav img {
+    max-height: 70px; 
+}
