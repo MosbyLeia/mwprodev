@@ -73,5 +73,5 @@ nav img {
 
 
 .btn btn-secondary .dropdown-toggle{
-    background: #dbdada
+    background: #dbdada !important;
 }
