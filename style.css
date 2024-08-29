@@ -70,3 +70,8 @@ nav img {
 .accordion-item.active .accordion-content {
   display: block;
 }
+
+
+.btn btn-secondary .dropdown-toggle{
+    background: #dbdada
+}
