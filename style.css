@@ -17,65 +17,13 @@
 }
 
 nav img {
-    max-height: 70px; 
+    max-height: 300px; 
 }
 
-.card {
-    margin: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
-
-.flip-card {
-    perspective: 1000px;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.flip-card-front {
-    background-color: #fff;
-}
-
-.flip-card-back {
-    background-color: #f1f1f1;
-    transform: rotateY(180deg);
-}
-
-/* Asegurarse de que los textos no se solapen */
-h2.display-4 {
-    margin-bottom: 20px;
-}
-
-h4 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.card-body {
-    padding: 20px;
-}
 
 /* Estilo general para el navbar */
 .navbar img {
-    height: 50px;
+    height: 130px;
 }
 
 
