@@ -20,55 +20,62 @@ nav img {
     max-height: 70px; 
 }
 
-
-
-
-.accordion {
-  max-width: 600px;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.card {
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
-.accordion-item {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  margin-bottom: 10px;
+.flip-card {
+    perspective: 1000px;
 }
 
-.accordion-header {
-  margin: 0;
-  border-bottom: 1px solid #ddd;
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
-.accordion-button {
-  width: 100%;
-  text-align: left;
-  background: #ffffff;
-  border: none;
-  outline: none;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 10px;
-  transition: background 0.3s ease, transform 0.3s ease;
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
 }
 
-.accordion-button:hover {
-  background: #f7f7f7;
-  transform: scale(1.02);
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
 }
 
-.accordion-content {
-  display: none;
-  padding: 15px;
-  background: #fafafa;
-  border-top: 1px solid #ddd;
-  border-radius: 10px;
+.flip-card-front {
+    background-color: #fff;
 }
 
-.accordion-item.active .accordion-content {
-  display: block;
+.flip-card-back {
+    background-color: #f1f1f1;
+    transform: rotateY(180deg);
+}
+
+/* Asegurarse de que los textos no se solapen */
+h2.display-4 {
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Estilo general para el navbar */
+.navbar img {
+    height: 50px;
 }
 
 
