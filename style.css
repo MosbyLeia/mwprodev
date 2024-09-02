@@ -33,3 +33,7 @@ nav img {
 .btn-secondary:hover {
     --bs-btn-bg: white !important; 
    }
+
+.btn-secondary:active {
+    --bs-btn-bg: white !important;  
+}
