@@ -30,3 +30,8 @@ nav img {
 .btn btn-secondary .dropdown-toggle{
     background: white !important;
 }
+
+
+.btn-secondary{
+    bs-btn-bg: white !important;
+}
