@@ -37,3 +37,7 @@ nav img {
 .btn-secondary:active {
     --bs-btn-bg: white !important;  
 }
+
+#about{
+     background-color: #dee2e6;
+}
