@@ -26,15 +26,15 @@ nav img {
     height: 130px;
 }
 
-.btn-secondary {
+.btn .btn-secondary .dropdown-toggle {
     --bs-btn-bg: white !important;
 }
 
-.btn-secondary:hover {
+.btn .btn-secondary .dropdown-toggle:hover {
     --bs-btn-bg: white !important; 
    }
 
-.btn-secondary:active {
+.btn .btn-secondary .dropdown-toggle:active {
     --bs-btn-bg: white !important;  
 }
 
