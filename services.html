@@ -223,7 +223,7 @@ Asesoramiento personalizado, ágil y completo, que permita prevenir o mitigar ri
 
 <style>
     .flip-card {
-        background-color: transparent;
+        background-color: grey;
         width: 100%;
         height: 100%;
         perspective: 1000px;
@@ -244,7 +244,7 @@ Asesoramiento personalizado, ágil y completo, que permita prevenir o mitigar ri
 
     .flip-card-front,
     .flip-card-back {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 100%;
         -webkit-backface-visibility: hidden;
@@ -270,6 +270,10 @@ Asesoramiento personalizado, ágil y completo, que permita prevenir o mitigar ri
         color: white;
         transform: rotateY(180deg);
     }
+    .card {
+    position: relative;
+    perspective: 1000px; /* Necesario para el flip 3D */
+}
 </style>
 
       <!-- Footer -->
