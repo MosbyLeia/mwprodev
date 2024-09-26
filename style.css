@@ -26,6 +26,14 @@ nav img {
     height: 130px;
 }
 
+.btn-secondary {
+    --bs-btn-bg: white !important; 
+   }
+
+.btn .btn-secondary {
+    --bs-btn-bg: white !important;
+}
+
 .btn .btn-secondary .dropdown-toggle {
     --bs-btn-bg: white !important;
 }
