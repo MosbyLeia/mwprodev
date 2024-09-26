@@ -25,7 +25,10 @@ nav img {
 .navbar img {
     height: 130px;
 }
-
+.btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    /* color: var(--bs-btn-active-color); */
+    /* background-color:  white !important;
+}
 .btn-secondary {
     --bs-btn-bg: white !important; 
    }
