@@ -80,9 +80,39 @@
                 <p class="recurso-descripcion">Guía indispensable para convertir a la tecnología en tu aliada en el camino de búsqueda laboral. En un mundo cada vez más digital, la tecnología no solo es una herramienta, sino un aliado poderoso en la búsqueda de empleo. Esta guía te ofrece las claves para transformar tus habilidades tecnológicas en un motor de éxito laboral. Aprenderás a optimizar tu currículum para plataformas de reclutamiento en línea, a dominar las redes sociales para construir una marca personal sólida y a utilizar aplicaciones y recursos digitales que te posicionen un paso adelante en este competitivo mercado. Descubre cómo la tecnología puede simplificar y potenciar tu búsqueda, abriendo puertas a oportunidades que antes parecían inalcanzables. ¡Es hora de dar un giro a tu carrera y aprovechar al máximo las ventajas del mundo digital!</p>
                <!-- Sección de venta -->
 <div class="guide-section">
- 
-  <!-- Imagen atractiva de la guía -->
-  <img src="ruta-de-tu-imagen-de-la-guía.jpg" alt="Guía indispensable para la búsqueda laboral" class="guide-image">
+<!-- Sección de venta de la guía -->
+<div class="guide-section">
+  <h2>¡Compra tu guía ahora!</h2>
+  <p>Obtén la guía que transformará tu búsqueda laboral utilizando la tecnología. Elige tu país para ver el precio correcto y realizar la compra.</p>
+
+  <!-- Selector de país -->
+  <div>
+    <label for="country-select">Selecciona tu país:</label>
+    <select id="country-select" onchange="showPrice()">
+      <option value="default">Selecciona tu país</option>
+      <option value="argentina">Argentina</option>
+      <option value="otros">Otros países</option>
+    </select>
+  </div>
+
+  <!-- Precio para Argentina -->
+  <div id="argentina-price" class="price-box" style="display: none;">
+    <h3>Precio en Argentina: AR$ 2500</h3>
+    <!-- Botón de Mercado Pago Argentina -->
+    <div class="mercado-pago-button">
+      <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">¡Comprar en Argentina!</a>
+    </div>
+  </div>
+
+  <!-- Precio para otros países -->
+  <div id="otros-price" class="price-box" style="display: none;">
+    <h3>Precio para otros países: USD 19.99</h3>
+    <!-- Botón de Mercado Pago Internacional (o PayPal, Stripe, etc.) -->
+    <div class="mercado-pago-button">
+      <a href="https://www.paypal.com/checkout?pref_id=int-pref-id" class="mp-button">¡Comprar desde otros países!</a>
+    </div>
+  </div>
+</div>
 
   <!-- Botón PayPal para comprar la guía -->
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -160,45 +190,6 @@
             </div>
         </div>
     </section>
-
-        /* Estilos generales para la sección */
-.guide-section {
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 50px 0;
-}
-
-.guide-section h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.guide-section p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.guide-image {
-  max-width: 300px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-/* Botón de PayPal */
-form input[type="image"] {
-  border: none;
-  width: 180px;
-}
-
-form input[type="image"]:hover {
-  opacity: 0.9;
-}
-
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
