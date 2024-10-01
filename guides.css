@@ -71,7 +71,7 @@ form input[type="image"]:hover {
 
 .mp-button {
   background-color: #00a680;
-  color: white;
+  color: white !important;
   padding: 15px 25px;
   font-size: 18px;
   text-align: center;
@@ -134,7 +134,7 @@ form input[type="image"]:hover {
 
 .mp-button {
   background-color: #00a680;
-  color: white;
+  color: white !important;
   padding: 15px 25px;
   font-size: 18px;
   text-align: center;
