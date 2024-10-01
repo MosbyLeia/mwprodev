@@ -52,3 +52,41 @@ nav img {
 #about{
      background-color: #dee2e6;
 }
+
+
+.guide-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px 0;
+}
+
+.guide-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.guide-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.guide-image {
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Botón de PayPal */
+form input[type="image"] {
+  border: none;
+  width: 180px;
+}
+
+form input[type="image"]:hover {
+  opacity: 0.9;
+}
