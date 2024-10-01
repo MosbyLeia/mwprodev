@@ -1,1 +1,150 @@
 
+.guide-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px 0;
+}
+
+.guide-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.guide-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.guide-image {
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Botón de PayPal */
+form input[type="image"] {
+  border: none;
+  width: 180px;
+}
+
+form input[type="image"]:hover {
+  opacity: 0.9;
+}
+/* Estilos generales para la sección */
+.guide-section {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 50px 0;
+}
+
+.guide-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.guide-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.guide-image {
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Estilos para el botón de Mercado Pago */
+.mercado-pago-button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.mp-button {
+  background-color: #00a680;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.mp-button:hover {
+  background-color: #008d6e;
+}
+
+/* Estilos generales para la sección */
+.guide-section {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 50px 0;
+}
+
+.guide-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.guide-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Estilos del selector */
+#country-select {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos de las cajas de precios */
+.price-box {
+  margin-top: 20px;
+}
+
+.price-box h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+/* Estilos para el botón de compra */
+.mercado-pago-button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.mp-button {
+  background-color: #00a680;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.mp-button:hover {
+  background-color: #008d6e;
+}
+
