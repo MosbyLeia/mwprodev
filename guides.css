@@ -70,7 +70,7 @@ form input[type="image"]:hover {
 }
 
 .mp-button {
-  background-color: #00a680;
+  background-color: #1297a5;
   color: white !important;
   padding: 15px 25px;
   font-size: 18px;
@@ -148,3 +148,6 @@ form input[type="image"]:hover {
   background-color: #008d6e;
 }
 
+ h4 {
+    margin-bottom: 15px; /* Añadimos un margen inferior al texto del precio */
+}
