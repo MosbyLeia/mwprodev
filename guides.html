@@ -72,87 +72,137 @@
         </p>
                <!-- Destacado del Mes -->
       <div class="recurso-destacado">
-  <h3 class="recurso-title">Destacado</h3>
-  <div class="recurso-contenido">
-    <h4 class="recurso-nombre">Guía de búsqueda laboral</h4>
-    <p class="recurso-descripcion">
-      En un mundo cada vez más digital, la tecnología no solo es una herramienta, sino un aliado poderoso en la búsqueda de empleo. Esta guía te ofrece las claves para transformar tus habilidades tecnológicas en un motor de éxito laboral. 
-      Aprenderás a optimizar tu currículum para plataformas de reclutamiento en línea, a dominar las redes sociales para construir una marca personal sólida, y a utilizar aplicaciones y recursos digitales que te posicionen un paso adelante en este competitivo mercado. 
-      Además, te brindará estrategias para prepararte eficazmente para entrevistas. ¡Es hora de dar un giro a tu carrera y aprovechar al máximo las ventajas del mundo digital!
-    </p>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Guías Destacadas</h2>
+    <div class="row">
+        <!-- Tarjeta: Guía de búsqueda laboral -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Guía de Búsqueda Laboral</h5>
+                    <p class="card-text">Transforma tus habilidades tecnológicas en un motor de éxito laboral y prepárate para entrevistas eficaces con estrategias clave.</p>
+                    
+                    <!-- Selección de país -->
+                    <div class="country-select">
+                        <label for="country-select-1">Selecciona tu país:</label>
+                        <select id="country-select-1" class="form-select" onchange="showPrice(1)">
+                            <option value="default">Selecciona tu país</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="otros">Otros países</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Precio para Argentina -->
+                    <div id="argentina-price-1" class="price-box" style="display: none;">
+                        <h4>Precio: AR$ 8.000</h4>
+                        <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">Comprar</a>
+                    </div>
 
-    <!-- Sección de venta -->
-    <p>Elige tu país para ver el precio correcto y realizar la compra.</p>
-
-    <!-- Selector de país -->
-    <div>
-      <label for="country-select-1">Selecciona tu país:</label>
-      <select id="country-select-1" onchange="showPrice(1)">
-        <option value="default">Selecciona tu país</option>
-        <option value="argentina">Argentina</option>
-        <option value="otros">Otros países</option>
-      </select>
-    </div>
-
-    <!-- Precio para Argentina -->
-    <div id="argentina-price-1" class="price-box" style="display: none;">
-      <h3>Precio en Argentina: AR$ 8.000</h3>
-      <!-- Botón de Mercado Pago Argentina -->
-      <div class="mercado-pago-button">
-        <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">¡Comprar!</a>
-      </div>
-    </div>
-
-    <!-- Precio para otros países -->
-    <div id="otros-price-1" class="price-box" style="display: none;">
-      <h3>Precio para otros países: USD 7.99</h3>
-      <!-- Botón de PayPal -->
-      <div class="mercado-pago-button">
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guialaboral&amount=8.99&currency_code=USD" class="mp-button">¡Comprar!</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container mt-5">
-  <div class="row">
-    <!-- Protección de Datos en la Web -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Protección de Datos en la Web: Guía de Seguridad Digital</h5>
-          <p class="card-text">Medidas esenciales para proteger tu sitio web y datos contra ciberataques, encriptación, autenticación y gestión de vulnerabilidades.</p>
-
-          <!-- Selector de país -->
-          <div>
-            <label for="country-select-2">Selecciona tu país:</label>
-            <select id="country-select-2" onchange="showPrice(2)">
-              <option value="default">Selecciona tu país</option>
-              <option value="argentina">Argentina</option>
-              <option value="otros">Otros países</option>
-            </select>
-          </div>
-
-          <!-- Precio para Argentina -->
-          <div id="argentina-price-2" class="price-box" style="display: none;">
-            <h3>Precio en Argentina: AR$ 9.000</h3>
-            <div class="mercado-pago-button">
-              <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">¡Comprar!</a>
+                    <!-- Precio para otros países -->
+                    <div id="otros-price-1" class="price-box" style="display: none;">
+                        <h4>Precio: USD 7.99</h4>
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guialaboral&amount=8.99&currency_code=USD" class="mp-button">Comprar</a>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Precio para otros países -->
-          <div id="otros-price-2" class="price-box" style="display: none;">
-            <h3>Precio para otros países: USD 8.99</h3>
-            <div class="mercado-pago-button">
-              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guiaseguridad&amount=8.99&currency_code=USD" class="mp-button">¡Comprar!</a>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <!-- Tarjeta: Guía de Seguridad Digital -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Protección de Datos en la Web</h5>
+                    <p class="card-text">Medidas esenciales para proteger tu sitio web y datos contra ciberataques, encriptación y gestión de vulnerabilidades.</p>
+
+                    <!-- Selección de país -->
+                    <div class="country-select">
+                        <label for="country-select-2">Selecciona tu país:</label>
+                        <select id="country-select-2" class="form-select" onchange="showPrice(2)">
+                            <option value="default">Selecciona tu país</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="otros">Otros países</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Precio para Argentina -->
+                    <div id="argentina-price-2" class="price-box" style="display: none;">
+                        <h4>Precio: AR$ 9.000</h4>
+                        <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">Comprar</a>
+                    </div>
+
+                    <!-- Precio para otros países -->
+                    <div id="otros-price-2" class="price-box" style="display: none;">
+                        <h4>Precio: USD 8.99</h4>
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guiaseguridad&amount=8.99&currency_code=USD" class="mp-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: Optimización de Perfiles -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Optimización de Perfiles en LinkedIn y GitHub</h5>
+                    <p class="card-text">Estrategias para mejorar y destacar tus perfiles en LinkedIn y GitHub para atraer oportunidades.</p>
+
+                    <!-- Selección de país -->
+                    <div class="country-select">
+                        <label for="country-select-3">Selecciona tu país:</label>
+                        <select id="country-select-3" class="form-select" onchange="showPrice(3)">
+                            <option value="default">Selecciona tu país</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="otros">Otros países</option>
+                        </select>
+                    </div>
+
+                    <!-- Precio para Argentina -->
+                    <div id="argentina-price-3" class="price-box" style="display: none;">
+                        <h4>Precio: AR$ 7.500</h4>
+                        <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">Comprar</a>
+                    </div>
+
+                    <!-- Precio para otros países -->
+                    <div id="otros-price-3" class="price-box" style="display: none;">
+                        <h4>Precio: USD 6.99</h4>
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guiaperfiles&amount=6.99&currency_code=USD" class="mp-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: Consultoría Estratégica -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Consultoría Estratégica para Emprendedores Digitales</h5>
+                    <p class="card-text">Planifica y ejecuta estrategias digitales efectivas para captar clientes y optimizar tu presencia en línea.</p>
+
+                    <!-- Selección de país -->
+                    <div class="country-select">
+                        <label for="country-select-4">Selecciona tu país:</label>
+                        <select id="country-select-4" class="form-select" onchange="showPrice(4)">
+                            <option value="default">Selecciona tu país</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="otros">Otros países</option>
+                        </select>
+                    </div>
+
+                    <!-- Precio para Argentina -->
+                    <div id="argentina-price-4" class="price-box" style="display: none;">
+                        <h4>Precio: AR$ 10.000</h4>
+                        <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">Comprar</a>
+                    </div>
+
+                    <!-- Precio para otros países -->
+                    <div id="otros-price-4" class="price-box" style="display: none;">
+                        <h4>Precio: USD 9.99</h4>
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guiaconsultoria&amount=9.99&currency_code=USD" class="mp-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-  </div>
 </div>
 
       
