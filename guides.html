@@ -71,106 +71,89 @@
             ¡Bienvenido a tu biblioteca de herramientas esenciales! Aquí irás encontrando una colección cuidadosamente seleccionada de eBooks, plantillas, y guías diseñadas para potenciar tu camino como usuario y como profesional. Todos ellos han sido creados con un solo propósito: ayudarte a superar desafíos técnicos, mejorar tus habilidades, y acelerar tus proyectos. Ya sea que estés buscando perfeccionar tus conocimientos en un área específica o necesites una solución rápida y efectiva, estos materiales están aquí para ti.
         </p>
                <!-- Destacado del Mes -->
-        <div class="recurso-destacado">
-            <h3 class="recurso-title">Destacado</h3>
-            <div class="recurso-contenido">
-                <h4 class="recurso-nombre">Guía de búsqueda laboral</h4>
-                <p class="recurso-descripcion">En un mundo cada vez más digital, la tecnología no solo es una herramienta, sino un aliado poderoso en la búsqueda de empleo.
-                    Esta guía te ofrece las claves para transformar tus habilidades tecnológicas en un motor de éxito laboral.
-                    Aprenderás a optimizar tu currículum para plataformas de reclutamiento en línea, a dominar las redes sociales para construir una marca personal sólida y a utilizar aplicaciones y recursos digitales que te posicionen un paso adelante en este competitivo mercado. 
-                    Además, te brindará estrategias para prepararte eficazmente para entrevistas, para manejarte con cualquier tipo de preguntas. Descubre cómo la tecnología puede simplificar y potenciar tu búsqueda, abriendo puertas a oportunidades que antes parecían inalcanzables.</p> 
-                <p>¡Es hora de dar un giro a tu carrera y aprovechar al máximo las ventajas del mundo digital, hasta el momento clave de la entrevista!</p>
-               <!-- Sección de venta -->
-<div class="guide-section">
-<!-- Sección de venta de la guía -->
-<div class="guide-section">
+      <div class="recurso-destacado">
+  <h3 class="recurso-title">Destacado</h3>
+  <div class="recurso-contenido">
+    <h4 class="recurso-nombre">Guía de búsqueda laboral</h4>
+    <p class="recurso-descripcion">
+      En un mundo cada vez más digital, la tecnología no solo es una herramienta, sino un aliado poderoso en la búsqueda de empleo. Esta guía te ofrece las claves para transformar tus habilidades tecnológicas en un motor de éxito laboral. 
+      Aprenderás a optimizar tu currículum para plataformas de reclutamiento en línea, a dominar las redes sociales para construir una marca personal sólida, y a utilizar aplicaciones y recursos digitales que te posicionen un paso adelante en este competitivo mercado. 
+      Además, te brindará estrategias para prepararte eficazmente para entrevistas. ¡Es hora de dar un giro a tu carrera y aprovechar al máximo las ventajas del mundo digital!
+    </p>
 
-  <p>Elige tu país para ver el precio correcto y realizar la compra.</p>
+    <!-- Sección de venta -->
+    <p>Elige tu país para ver el precio correcto y realizar la compra.</p>
 
-  <!-- Selector de país -->
-  <div>
-    <label for="country-select">Selecciona tu país:</label>
-    <select id="country-select" onchange="showPrice()">
-      <option value="default">Selecciona tu país</option>
-      <option value="argentina">Argentina</option>
-      <option value="otros">Otros países</option>
-    </select>
-  </div>
-
-  <!-- Precio para Argentina -->
-  <div id="argentina-priceLab" class="price-box" style="display: none;">
-    <h3>Precio en Argentina: AR$ 8.000</h3>
-    <!-- Botón de Mercado Pago Argentina -->
-    <div class="mercado-pago-button">
-      <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">¡Comprar!</a>
+    <!-- Selector de país -->
+    <div>
+      <label for="country-select-1">Selecciona tu país:</label>
+      <select id="country-select-1" onchange="showPrice(1)">
+        <option value="default">Selecciona tu país</option>
+        <option value="argentina">Argentina</option>
+        <option value="otros">Otros países</option>
+      </select>
     </div>
-  </div>
 
-  <!-- Precio para otros países -->
-  <div id="otros-priceLab" class="price-box" style="display: none;">
-    <h3>Precio para otros países: USD 7.99</h3>
-    <!-- Botón de Mercado Pago Internacional (o PayPal, Stripe, etc.) -->
-    <div class="mercado-pago-button">
-      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guialaboral&amount=8.99&currency_code=USD" class="mp-button">¡Comprar!</a>
+    <!-- Precio para Argentina -->
+    <div id="argentina-price-1" class="price-box" style="display: none;">
+      <h3>Precio en Argentina: AR$ 8.000</h3>
+      <!-- Botón de Mercado Pago Argentina -->
+      <div class="mercado-pago-button">
+        <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">¡Comprar!</a>
+      </div>
     </div>
-  </div>
-</div>
 
-
-</div>
-
-            </div>
-        </div>
-
-     <div class="container mt-5">
-    <div class="row">
-        <!-- Protección de Datos en la Web -->
-        <div class="col-md-6 col-lg-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Protección de Datos en la Web: Guía de Seguridad Digital</h5>
-                    <p class="card-text">Aquí encontrarás medidas esenciales para proteger tu sitio web y datos contra ciberataques, encriptación, autenticación y gestión de vulnerabilidades, casos de estudio de brechas de seguridad, herramientas de seguridad y procedimientos de respuesta</p>
-            <!-- Precio para Argentina -->
-  <div id="argentina-priceSeg" class="price-box" style="display: none;">
-    <h3>Precio en Argentina: AR$ 9.000</h3>
-    <!-- Botón de Mercado Pago Argentina -->
-    <div class="mercado-pago-button">
-      <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">¡Comprar!</a>
-    </div>
-  </div>
-
-  <!-- Precio para otros países -->
-  <div id="otros-priceSeg" class="price-box" style="display: none;">
-    <h3>Precio para otros países: USD 8.99</h3>
-    <!-- Botón de Mercado Pago Internacional (o PayPal, Stripe, etc.) -->
-    <div class="mercado-pago-button">
-      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guiaseguridad&amount=8.99&currency_code=USD" class="mp-button">¡Comprar!</a>
+    <!-- Precio para otros países -->
+    <div id="otros-price-1" class="price-box" style="display: none;">
+      <h3>Precio para otros países: USD 7.99</h3>
+      <!-- Botón de PayPal -->
+      <div class="mercado-pago-button">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guialaboral&amount=8.99&currency_code=USD" class="mp-button">¡Comprar!</a>
+      </div>
     </div>
   </div>
 </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Optimización de Perfiles en LinkedIn y GitHub -->
-        <div class="col-md-6 col-lg-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Optimización de Perfiles en LinkedIn y GitHub: Guía para Profesionales</h5>
-                    <p class="card-text"> Estrategias para mejorar y destacar tus perfiles en LinkedIn y GitHub, incluyendo ejemplos de perfiles exitosos y recomendaciones para atraer oportunidades, plantillas para mejorar perfiles, consejos de expertos y análisis de perfiles de referencia.</p>
-                </div>
-            </div>
-        </div>
+<div class="container mt-5">
+  <div class="row">
+    <!-- Protección de Datos en la Web -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Protección de Datos en la Web: Guía de Seguridad Digital</h5>
+          <p class="card-text">Medidas esenciales para proteger tu sitio web y datos contra ciberataques, encriptación, autenticación y gestión de vulnerabilidades.</p>
 
-        <!-- Consultoría Estratégica para Emprendedores Digitales -->
-        <div class="col-md-6 col-lg-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Consultoría Estratégica para Emprendedores Digitales</h5>
-                    <p class="card-text">Contenido: Cómo planificar y ejecutar estrategias digitales efectivas, optimización de presencia en línea y técnicas para captar clientes con estrategias probadas, ejemplos de casos exitosos y recursos para la implementación.</p>
-                </div>
+          <!-- Selector de país -->
+          <div>
+            <label for="country-select-2">Selecciona tu país:</label>
+            <select id="country-select-2" onchange="showPrice(2)">
+              <option value="default">Selecciona tu país</option>
+              <option value="argentina">Argentina</option>
+              <option value="otros">Otros países</option>
+            </select>
+          </div>
+
+          <!-- Precio para Argentina -->
+          <div id="argentina-price-2" class="price-box" style="display: none;">
+            <h3>Precio en Argentina: AR$ 9.000</h3>
+            <div class="mercado-pago-button">
+              <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=arg-pref-id" class="mp-button">¡Comprar!</a>
             </div>
+          </div>
+
+          <!-- Precio para otros países -->
+          <div id="otros-price-2" class="price-box" style="display: none;">
+            <h3>Precio para otros países: USD 8.99</h3>
+            <div class="mercado-pago-button">
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mariaaureliablanco@gmail.com&item_name=guiaseguridad&amount=8.99&currency_code=USD" class="mp-button">¡Comprar!</a>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
       
 </section>
