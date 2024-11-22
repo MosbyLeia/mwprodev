@@ -16,9 +16,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <script src="index.js">  </script>  
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </head>
@@ -44,7 +43,7 @@
 
    
     <style>
-        * {
+       * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -61,7 +60,7 @@
             justify-content: space-between;
             align-items: center;
             position: relative;
-            height: 200px;
+            height: 300px;
             border-left: 3px solid #4caf50;
             padding-left: 30px;
         }
@@ -104,7 +103,7 @@
             height: 10px;
             width: 100%;
             position: absolute;
-            top: 100px;
+            top: 120px;
             border-top: 3px solid #4caf50;
             border-radius: 50%;
             z-index: -1;
@@ -115,49 +114,62 @@
             stroke-width: 3;
             fill: none;
         }
-        </style>
- <h1>Fullstack Programmer Learning Timeline</h1>
+
+        .tech-icons {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .tech-icons i {
+            font-size: 40px;
+            margin: 5px;
+        }
+    </style>
+
+    <h1>Fullstack Programmer Learning Timeline</h1>
     <div class="timeline">
         <div class="phase phase1">
             <p>Phase 1<br>Fundamentals (0-6 months)</p>
             <div class="tech-icons">
-                <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" title="HTML5" alt="HTML5"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg" title="CSS3" alt="CSS3"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" title="SASS" alt="SASS"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript"/>
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-sass" title="SASS"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
             </div>
         </div>
         <div class="phase phase2">
             <p>Phase 2<br>Frontend Development (6-12 months)</p>
             <div class="tech-icons">
-                <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original-wordmark.svg" title="Bootstrap" alt="Bootstrap"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/jquery/jquery-original-wordmark.svg" title="jQuery" alt="jQuery"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React"/>
+                <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                <i class="fab fa-js-square" title="jQuery"></i>
+                <i class="fab fa-react" title="React"></i>
             </div>
         </div>
         <div class="phase phase3">
             <p>Phase 3<br>Backend Development (12-18 months)</p>
             <div class="tech-icons">
-                <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="Node.js" alt="Node.js"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg" title="PHP" alt="PHP"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/dotnetcore/dotnetcore-original.svg" title=".NET Core" alt=".NET Core"/>
+                <i class="fab fa-node-js" title="Node.js"></i>
+                <i class="fab fa-php" title="PHP"></i>
+                <i class="fab fa-dot-net" title=".NET Core"></i>
             </div>
         </div>
         <div class="phase phase4">
             <p>Phase 4<br>Fullstack Development (18-24 months)</p>
             <div class="tech-icons">
-                <img src="https://github.com/devicons/devicon/blob/master/icons/csharp/csharp-original.svg" title="C#" alt="C#"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/blazor/blazor-original.svg" title="Blazor" alt="Blazor"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" title="SQL" alt="SQL"/>
+                <i class="fab fa-csharp" title="C#"></i>
+                <i class="fab fa-blazor" title="Blazor"></i>
+                <i class="fas fa-database" title="SQL"></i>
             </div>
         </div>
         <div class="phase phase5">
             <p>Phase 5<br>Advanced Topics (24+ months)</p>
             <div class="tech-icons">
-                <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="SQL" alt="SQL"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/azure/azure-original-wordmark.svg" title="Azure DevOps" alt="Azure DevOps"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git"/>
-                <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original-wordmark.svg" title="GitHub" alt="GitHub"/>
+                <i class="fas fa-database" title="SQL"></i>
+                <i class="fab fa-azure" title="Azure DevOps"></i>
+                <i class="fab fa-git" title="Git"></i>
+                <i class="fab fa-github" title="GitHub"></i>
             </div>
         </div>
     </div>
