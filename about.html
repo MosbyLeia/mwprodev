@@ -42,6 +42,114 @@
     </div>
 </nav>
 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Programmer Learning Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            height: 200px;
+            border-left: 3px solid #4caf50;
+            padding-left: 30px;
+        }
+
+        .phase {
+            position: absolute;
+            bottom: -20px;
+            width: 120px;
+            text-align: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .phase1 { left: 0%; }
+        .phase2 { left: 25%; }
+        .phase3 { left: 50%; }
+        .phase4 { left: 75%; }
+        .phase5 { left: 100%; }
+
+        .phase::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: #4caf50;
+            border-radius: 50%;
+        }
+
+        .phase p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .curve {
+            height: 10px;
+            width: 100%;
+            position: absolute;
+            top: 100px;
+            border-top: 3px solid #4caf50;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .curve path {
+            stroke: #4caf50;
+            stroke-width: 3;
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fullstack Programmer Learning Timeline</h1>
+    <div class="timeline">
+        <div class="phase phase1">
+            <p>Phase 1<br>Fundamentals (0-6 months)</p>
+        </div>
+        <div class="phase phase2">
+            <p>Phase 2<br>Frontend Development (6-12 months)</p>
+        </div>
+        <div class="phase phase3">
+            <p>Phase 3<br>Backend Development (12-18 months)</p>
+        </div>
+        <div class="phase phase4">
+            <p>Phase 4<br>Fullstack Development (18-24 months)</p>
+        </div>
+        <div class="phase phase5">
+            <p>Phase 5<br>Advanced Topics (24+ months)</p>
+        </div>
+    </div>
+
+    <svg class="curve" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 80 Q 25 40, 50 60 T 100 80" />
+    </svg>
+
+</body>
+</html>
+
 
 <!-- About Section -->
     <section id="about">
