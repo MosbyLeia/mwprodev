@@ -43,7 +43,7 @@
 
    
     <style>
-       * {
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -57,127 +57,210 @@
 
         .timeline {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            height: 300px;
-            border-left: 3px solid #4caf50;
-            padding-left: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
 
-        .phase {
-            position: absolute;
-            bottom: -20px;
-            width: 120px;
+        .tech-item {
             text-align: center;
+            width: 120px;
             padding: 10px;
             background-color: #ffffff;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .phase1 { left: 0%; }
-        .phase2 { left: 25%; }
-        .phase3 { left: 50%; }
-        .phase4 { left: 75%; }
-        .phase5 { left: 100%; }
-
-        .phase::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 10px;
-            height: 10px;
-            background-color: #4caf50;
-            border-radius: 50%;
+        .tech-item i {
+            font-size: 50px;
+            color: #4caf50;
+            margin-bottom: 10px;
         }
 
-        .phase p {
-            margin-top: 10px;
+        .tech-item p {
             font-weight: bold;
+            font-size: 14px;
         }
 
-        .curve {
-            height: 10px;
-            width: 100%;
-            position: absolute;
-            top: 120px;
-            border-top: 3px solid #4caf50;
-            border-radius: 50%;
-            z-index: -1;
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
         }
 
-        .curve path {
-            stroke: #4caf50;
-            stroke-width: 3;
-            fill: none;
-        }
-
-        .tech-icons {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 10px;
-        }
-
-        .tech-icons i {
-            font-size: 40px;
-            margin: 5px;
+        .container {
+            padding: 20px;
+            margin-bottom: 40px;
         }
     </style>
-
     <h1>Fullstack Programmer Learning Timeline</h1>
-    <div class="timeline">
-        <div class="phase phase1">
-            <p>Phase 1<br>Fundamentals (0-6 months)</p>
-            <div class="tech-icons">
+
+    <div class="container">
+        <h2 class="section-title">1. Frontend Development</h2>
+        <div class="timeline">
+            <div class="tech-item">
                 <i class="fab fa-html5" title="HTML5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="tech-item">
                 <i class="fab fa-css3-alt" title="CSS3"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="tech-item">
                 <i class="fab fa-sass" title="SASS"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
+                <p>SASS</p>
             </div>
-        </div>
-        <div class="phase phase2">
-            <p>Phase 2<br>Frontend Development (6-12 months)</p>
-            <div class="tech-icons">
+            <div class="tech-item">
                 <i class="fab fa-bootstrap" title="Bootstrap"></i>
-                <i class="fab fa-js-square" title="jQuery"></i>
-                <i class="fab fa-react" title="React"></i>
+                <p>Bootstrap</p>
             </div>
-        </div>
-        <div class="phase phase3">
-            <p>Phase 3<br>Backend Development (12-18 months)</p>
-            <div class="tech-icons">
-                <i class="fab fa-node-js" title="Node.js"></i>
-                <i class="fab fa-php" title="PHP"></i>
-                <i class="fab fa-dot-net" title=".NET Core"></i>
-            </div>
-        </div>
-        <div class="phase phase4">
-            <p>Phase 4<br>Fullstack Development (18-24 months)</p>
-            <div class="tech-icons">
-                <i class="fab fa-csharp" title="C#"></i>
-                <i class="fab fa-blazor" title="Blazor"></i>
-                <i class="fas fa-database" title="SQL"></i>
-            </div>
-        </div>
-        <div class="phase phase5">
-            <p>Phase 5<br>Advanced Topics (24+ months)</p>
-            <div class="tech-icons">
-                <i class="fas fa-database" title="SQL"></i>
-                <i class="fab fa-azure" title="Azure DevOps"></i>
-                <i class="fab fa-git" title="Git"></i>
-                <i class="fab fa-github" title="GitHub"></i>
+            <div class="tech-item">
+                <i class="fab fa-poncho" title="Poncho"></i>
+                <p>Poncho</p>
             </div>
         </div>
     </div>
 
-    <svg class="curve" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <path d="M 0 80 Q 25 40, 50 60 T 100 80" />
-    </svg>
+    <div class="container">
+        <h2 class="section-title">2. Backend Development</h2>
+        <div class="timeline">
+            <div class="tech-item">
+                <i class="fab fa-js" title="JavaScript"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-node-js" title="Node.js"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-php" title="PHP"></i>
+                <p>PHP</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-csharp" title="C#"></i>
+                <p>C#</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-dot-net" title=".NET Core 6"></i>
+                <p>.NET Core 6</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-java" title="Java"></i>
+                <p>Java</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <h2 class="section-title">3. Frameworks & Libraries</h2>
+        <div class="timeline">
+            <div class="tech-item">
+                <i class="fab fa-react" title="React"></i>
+                <p>React</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-js-square" title="jQuery"></i>
+                <p>jQuery</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-blazor" title="Blazor"></i>
+                <p>Blazor</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-code" title="Razor"></i>
+                <p>Razor</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-database" title="Entity Framework"></i>
+                <p>Entity Framework</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-database" title="Entity Framework Core"></i>
+                <p>Entity Framework Core</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-cogs" title="MVC"></i>
+                <p>MVC</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">4. Databases</h2>
+        <div class="timeline">
+            <div class="tech-item">
+                <i class="fas fa-database" title="SQL"></i>
+                <p>SQL</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-mysql" title="MySQL"></i>
+                <p>MySQL</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-microsoft" title="SQL Server"></i>
+                <p>SQL Server</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">5. Development Tools & Platforms</h2>
+        <div class="timeline">
+            <div class="tech-item">
+                <i class="fab fa-git" title="Git"></i>
+                <p>Git</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-github" title="GitHub"></i>
+                <p>GitHub</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-visualstudio" title="Visual Studio"></i>
+                <p>Visual Studio</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-visualstudio-code" title="Visual Studio Code"></i>
+                <p>VS Code</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-azure" title="Azure DevOps"></i>
+                <p>Azure DevOps</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-trello" title="Trello (Agile Methodologies)"></i>
+                <p>Agile Methods</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">6. SharePoint & Legacy Technologies</h2>
+        <div class="timeline">
+            <div class="tech-item">
+                <i class="fas fa-server" title="SharePoint 2007"></i>
+                <p>SharePoint 2007</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-server" title="SharePoint 2013"></i>
+                <p>SharePoint 2013</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-server" title="SharePoint 2016"></i>
+                <p>SharePoint 2016</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-server" title="SharePoint Designer"></i>
+                <p>SharePoint Designer</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-server" title="InfoPath"></i>
+                <p>InfoPath</p>
+            </div>
+        </div>
+    </div>
 
 <!-- About Section -->
     <section id="about">
